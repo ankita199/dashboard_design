@@ -14,6 +14,7 @@ require 'mina/puma'
 set :domain, '109.203.126.211'
 set :user, 'root'
 set :deploy_to, '/sites/dashboard/'
+set :app_path,        "#{deploy_to}/#{current_path}"
 set :repository, 'git@github.com:ankita199/dashboard_design.git'
 set :branch, 'master'
 set :rails_env, 'production'
